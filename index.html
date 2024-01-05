@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link src="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body >
+    <h1 style="text-align: center ;" class="heading">Form Builder</h1>
+    <form id="mainForm" style="margin-left: 350px; margin-bottom: 50px;margin-top: 40px; margin-right: 400px; background-color: beige;padding: 20px; border-radius: 2px;">
+        <label for="elementName" style="margin-bottom: 10px;"><b>Element Name:</b></label>
+        <input type="text" id="elementName" name="elementName" required>&nbsp;
+    
+        <label for="elementType"><b>Element Type:</b></label>
+        <select id="elementType" name="elementType" required>
+        <option value="select">Select</option>
+          <option value="text" type="text">Text</option>
+          <option value="email"  type="email">email</option>
+          <option value="password"  type="password">Password</option>
+          
+        </select>
+        
+        &nbsp;
+        <label><b>Required?:</b>
+          <input type="radio" name="isRequired" value="yes" required> <b>Yes</b>&nbsp;
+          <input type="radio" name="isRequired" value="no" required> <b>No</b>&nbsp;&nbsp;
+        </label>
+    
+        <button type="button"  onclick="addElement()"><b>+</b></button>
+        <button type="button" style="margin-left: 300px; margin-top: 30px;margin-bottom: 7px" onclick="generateForm()"><b>Generate Form</b></button>
+      </form>
+      
+      <h1 style="text-align:center ;" class="heading">Your Form :</h1>
+      <div id="dynamicForm" style="margin-left: 350px;margin-right: 400px;"></div>
+</body>
+</html>

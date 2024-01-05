@@ -1,0 +1,39 @@
+body {
+    font-family:  sans-serif;
+  }
+
+  form {
+    max-width: 400px;
+    margin-bottom: 400px;
+    background-color: beige;
+    border: 2px solid black;
+  }
+  
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  select, input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  button {
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  #dynamicForm {
+    margin-top: 100px;
+    margin-left: 300px;
+  }
+  
+  
